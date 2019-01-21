@@ -1,0 +1,32 @@
+﻿.jumbotron {
+    background-image: url('../img/imageCV2.png');
+    background-size: 100% 170%;
+}
+.progress-label {
+    float: left;
+    margin-right: 1em;
+}
+.marge {
+    margin-top: 4em;
+}
+.marge1 {
+    margin-top: 5em;
+}
+.display-4, .lead {
+    margin-left : 1em;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #000000;
+}
+.navbar {
+    background-color: #cecece;
+}
+#contactText {
+    margin-left: 1em;
+}
+.colorPlace {
+    color: #0080ff;
+}
+.padding {
+    padding-top: 4em;
+}

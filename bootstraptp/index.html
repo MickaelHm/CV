@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--permettre que la page soit responsive et ne pas oublier le slash de la balise auto femrante-->
+    <title>CV Numérique</title>
+</head>
+<body>
+    <div class="container">
+
+
+        <!--déplacer tous les attributs style dans la feuille de style CSS-->
+
+
+        <!--Jumbotron-->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="text-white">
+                <h1 class="display-4">Harmeau Mickael</h1>
+                <p class="lead">Recherche Alternance Développeur Web/Web mobil. <br />
+                Titre Professionnel d'état RNCP Niveau III (bac+2)</p>
+            </div>
+        </div>
+
+        <!--Zone de test début-->
+
+        <!--Zone de test fin-->
+
+        <!--NavBar-->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#formation">Formation</a><!--passer le color font dans la feuille de style en utilisant les valeurs hexadécimales-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#degree">Diplôme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skill">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience Pro.</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <button data-toggle="modal" data-target="#info" class="nav-link text-white btn btn-dark font-weight-bold rounded mr-sm-2">GitLab</button>
+                </form>
+            </div>
+        </nav>
+
+        <!--Modal dans la NavBar-->
+        <div class="modal" id="info">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="title">GitLab Harmeau Mickael</h5>  <!--changer h5-->
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center btn-primary"><!--structuration et ajout de couleur et centrage du text-->
+                        <a class="text-white" href="https://gitlab.ecole-e2n.fr/MickaelHm" title="Lien vers mon profil GitLab">https://gitlab.ecole-e2n.fr/MickaelHm</a> <!--Ajout du lien dans la modal et ne pas oublier de mettre la couleur du text directement sur cette ligne pour que le lien soit impacté-->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">X Fermer</button><!--ajout d'un bouton de fermeture supplémentaire avec le texte voulu-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--<div id="formation"></div>-->
+        <!--remplacer par une classe créé sois meme et un margin bottom ou top sur la div du dessous ou dessus sur la feuille de style css-->
+
+
+        <!--Formation-->
+        <div class="padding" id="formation">
+            <h2>Formation : </h2>
+            <ul>
+                <li>
+                    <!--remplacer balise strong par un span font-weight-bold et enlever le br et le remplacer par 2 paragraphse et pour supprimer l'espace entre les lignes jouer sur le css voir-->
+                    <p>Décembre 2018 - Mars 2019 : <span style="font-weight: bold;">Concepteur développeur .NET</span>    Total : <span style="font-weight: bold;">400 heures</span></p>
+                    <p><span class="colorPlace">École du Numérique La Manu</span>, Le Havre </p>
+                    (C# .NET HTML5 CSS3)
+                </li>
+            </ul>
+        </div>
+
+        <div id="degree"></div>
+
+        <!--Diplômes-->
+        <div class="marge1">
+            <h3>Diplômes : </h3>
+            <ul>
+                <li>
+                    2017-2018 : <span style="font-weight: bold;">D.A.E.U B Mention Bien</span> (Equivalance BAC S)<br />
+                    <span class="colorPlace">Université du Havre</span>, Le Havre
+                </li>
+            </ul>
+        </div>
+
+
+        <div id="skill"></div>
+
+        <!--Compétences-->
+        <div class="marge1">
+            <div class="col-sm-6">
+                <h3>Compétences : </h3>
+                <h4>C# : </h4>
+                <div class="progress w-50">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%" width="50%"></div>
+                </div>
+                <h4>.NET : </h4>
+                <div class="progress w-50">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%" width="50%"></div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h4>HTML5 : </h4>
+                <div class="progress w-50">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%" width="50%"></div>
+                </div>
+                <h4>CSS3 : </h4>
+                <div class="progress w-50">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%" width="50%"></div>
+                </div>
+            </div>
+        </div>
+        <div style="height:20px;display:block;"> </div>
+
+        <div id="experience"></div>
+
+
+        <!--Experiences Professionnelles-->
+        <div class="marge1">
+            <h3>Expériences Professionnelles : </h3>
+            <div style="height:1em;display:block;"></div>
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Pratiques</th>
+                        <th scope="col">Dates</th>
+                        <th scope="col">Employeurs</th>
+                        <th scope="col">Lieux</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Dépannage Hardware et Software</th>
+                        <td>2008-2018</td>
+                        <td>Particuliers</td>
+                        <td>Evreux</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Montage et Installation PC auprès de Particuiliers</th>
+                        <td>2008-2018</td>
+                        <td>Particuliers</td>
+                        <td>Evreux</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div id="about"></div>
+
+        <!--A propos-->
+        <div class="marge1">
+            <h3>A propos</h3>
+            <p>
+                Pationné d'informatique depuis une dizaine d'année, j'ai décidé de me lancer dans le développement et déménagé sur le Havre pour mes études. <br />
+                Avant cela je faisais du dépannage informatique Hardware/Software auprès de particuliers. <br />
+                Ma motivation est immense de pouvoir enfin me réaliser dans ce domaine. 
+            </p>
+        </div>
+
+
+        <!--Footer contact-->
+        <footer class="marge1" id="contact">
+            <div class="text-white" style="background-image: url(https://nsa39.casimages.com/img/2019/01/07//19010702372957308.png); background-size: 100% 170%;">
+                <div class="row">
+                    <div id="contactText" class="col-sm-12">
+                        <h5>Contact</h5>
+                        <ul>
+                            <li>Tel: 06.46.61.28.36</li>
+                            <li>Mail: Harmeau.Mickael@gmail.com</li>
+                            <li>Adresse: 96 Rue Anatole France, Le Havre</li>
+                            <li><a href="mailto:Harmeau.Mickael@gmail.com" target="_blank">Harmeau.Mickael@gmail.com </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>

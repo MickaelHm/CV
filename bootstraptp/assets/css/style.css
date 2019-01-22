@@ -1,19 +1,13 @@
 ﻿.jumbotron {
-    background-image: url('../img/imageCV2.png');
-    background-size: 100% 170%;
+    background-image: url('../img/imageCV2.png'); /*Image de fond du jumbotron*/
+    background-size: 100% 170%;/*Ajustement de l'image*/
 }
 .progress-label {
     float: left;
     margin-right: 1em;
 }
-.marge {
-    margin-top: 4em;
-}
-.marge1 {
-    margin-top: 5em;
-}
 .display-4, .lead {
-    margin-left : 1em;
+	margin-left: 1em; /*Mise en page du Titre et sous titre pour le décoller de la bordure gauche*/
 }
 .navbar-light .navbar-nav .nav-link {
     color: #000000;
@@ -22,11 +16,11 @@
     background-color: #cecece;
 }
 #contactText {
-    margin-left: 1em;
+	margin-left: 1em; /*Mise en page du Titre et sous titre pour le décoller de la bordure gauche*/
 }
 .colorPlace {
     color: #0080ff;
 }
 .padding {
-    padding-top: 4em;
+	padding-top: 4em; /*Mise en page et préféré à margin top pour que le NavBar ne se superpose pas avec le contenu de ses propres liens*/
 }

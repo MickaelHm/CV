@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
     <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--permettre que la page soit responsive et ne pas oublier le slash de la balise auto femrante-->
     <title>CV Numérique</title>
@@ -11,25 +12,24 @@
     <div class="container">
         <!--Jumbotron-->
         <div class="jumbotron jumbotron-fluid">
-            <div class="text-white"> <!--Texte en blanc pour le voir sur le fond de l'image foncé-->
+            <div class="text-white"><!--Texte en blanc pour le voir sur le fond de l'image foncé-->
                 <h1 class="display-4">Harmeau Mickael</h1>
-                <p class="lead">Recherche Alternance Développeur Web/Web mobil. <br />
-                Titre Professionnel d'état RNCP Niveau III (bac+2)</p>
+                <p class="lead">
+                    Recherche Alternance Développeur Web/Web mobile. <br />
+                    Titre Professionnel d'état RNCP Niveau III (bac+2)
+                </p>
             </div>
         </div>
 
-        <!--Zone de test début-->
-		
-		<!--Zone de test fin-->
-
         <!--NavBar-->
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light"> <!--NavBar qui reste en haut de l'écran quand on scroll-->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+            <!--NavBar qui reste en haut de l'écran quand on scroll-->
             <a class="navbar-brand" href="#">Home</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<!--Lien de la NavBar-->
+                <!--Lien de la NavBar-->
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#formation">Formation</a>
@@ -42,6 +42,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#experience">Experience Pro.</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#alternation">Alternance</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">A propos</a>
@@ -57,16 +60,19 @@
         </nav>
 
         <!--Modal dans la NavBar-->
-        <div class="modal" id="info"><!--Ajout d'une Modal-->
+        <div class="modal" id="info">
+            <!--Ajout d'une Modal-->
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <p class="modal-title" id="title">GitLab Harmeau Mickael</p><!--Titre de la Modal-->
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><!--Croix de fermeture-->
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <!--Croix de fermeture-->
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body text-center btn-primary"><!--structuration et ajout de couleur et centrage du text-->
+                    <div class="modal-body text-center btn-primary">
+                        <!--structuration et ajout de couleur et centrage du text-->
                         <a class="text-white" href="https://gitlab.ecole-e2n.fr/MickaelHm" title="Lien vers mon profil GitLab">https://gitlab.ecole-e2n.fr/MickaelHm</a> <!--Ajout du lien dans la modal et ne pas oublier de mettre la couleur du text directement sur cette ligne pour que le lien soit impacté-->
                     </div>
                     <div class="modal-footer">
@@ -78,19 +84,19 @@
 
         <!--Formation-->
         <div class="padding" id="formation">
-            <h2>Formation : </h2>
+            <h2><i class="fas fa-laptop-code"></i> Formation : </h2><!--Ajout d'un icone avec fontAwesome-->
             <ul>
                 <li>
                     <p>Décembre 2018 - Mars 2019 : <span style="font-weight: bold;">Concepteur développeur .NET</span>    Total : <span style="font-weight: bold;">400 heures</span></p>
                     <p><span class="colorPlace">École du Numérique La Manu</span>, Le Havre </p>
-                    (C# .NET HTML5 CSS3)
+                    (Language & Framework vu lors de la formation: C# .NET HTML5 CSS3 Bootstrap JavaScript Jquery SQL)
                 </li>
             </ul>
         </div>
 
         <!--Diplômes-->
         <div class="padding" id="degree">
-            <h3>Diplômes : </h3>
+            <h3><i class="fas fa-graduation-cap"></i> Diplômes : </h3><!--Ajout d'un icone avec fontAwesome-->
             <ul>
                 <li>
                     2017-2018 : <span style="font-weight: bold;">D.A.E.U B Mention Bien</span> (Equivalance BAC S)<br />
@@ -100,50 +106,51 @@
         </div>
 
         <!--Compétences-->
-		<div class="padding" id="skill">
-			<div class="col-sm-6">
-				<h3>Compétences : </h3>
-				<h4>C# : </h4>
-				<div class="progress w-50">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 50%" width="50%"></div>
-				</div>
-				<h4>.NET : </h4>
-				<div class="progress w-50">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 50%" width="50%"></div>
-				</div>
-				<h4>HTML5 : </h4>
-				<div class="progress w-50">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 75%" width="50%"></div>
-				</div>
-				<h4>CSS3 : </h4>
-				<div class="progress w-50">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 60%" width="50%"></div>
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<h4>Bootstrap : </h4>
-				<div class="progress w-50">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 36%" width="50%"></div>
-				</div>
-				<h4>JavaScript : </h4>
-				<div class="progress w-50">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 36%" width="50%"></div>
-				</div>
-				<h4>Jquery : </h4>
-				<div class="progress w-50">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 36%" width="50%"></div>
-				</div>
-				<h4>CSS3 : </h4>
-				<div class="progress w-50">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 36%" width="50%"></div>
-				</div>
-			</div>
-		</div>
-        <div style="height:20px;display:block;"> </div>
+        <div class="padding" id="skill">
+            <h3><i class="fas fa-file-code"></i> Compétences : </h3><!--Ajout d'un icone avec fontAwesome-->
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4>C# : </h4>
+                    <div class="progress w-50">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 50%" width="50%"></div>
+                    </div>
+                    <h4>.NET : </h4>
+                    <div class="progress w-50">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 50%" width="50%"></div>
+                    </div>
+                    <h4>HTML5 : </h4>
+                    <div class="progress w-50">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 75%" width="50%"></div>
+                    </div>
+                    <h4>CSS3 : </h4>
+                    <div class="progress w-50">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 60%" width="50%"></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h4>Bootstrap : </h4>
+                    <div class="progress w-50">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 36%" width="50%"></div>
+                    </div>
+                    <h4>JavaScript : </h4>
+                    <div class="progress w-50">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 36%" width="50%"></div>
+                    </div>
+                    <h4>Jquery : </h4>
+                    <div class="progress w-50">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 36%" width="50%"></div>
+                    </div>
+                    <h4>SQL : </h4>
+                    <div class="progress w-50">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 36%" width="50%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!--Experiences Professionnelles-->
         <div class="padding" id="experience">
-            <h3>Expériences Professionnelles : </h3>
+            <h3><i class="fas fa-desktop"></i> Expériences Professionnelles : </h3><!--Ajout d'un icone avec fontAwesome-->
             <div style="height:1em;display:block;"></div>
             <table class="table">
                 <thead class="thead-dark">
@@ -171,13 +178,25 @@
             </table>
         </div>
 
+        <!--Alternance-->
+        <div class="padding" id="alternation">
+            <h3><i class="fas fa-info-circle"></i> Alternance : </h3><!--Ajout d'un icone avec fontAwesome-->
+            <p>
+                Mon alternance débutera le 13 mai pour une durée de 12 mois.<br />
+                Le format sera de 1 semaine en école suivi de 3 à 4 semaines d'affilées en entreprise.<br />
+                Elle débouchera sur un Titre professionnel d'Etat RNCP de Développeur Web/Web Mobile Niveau BAC+2<br />
+                Anciennement appelée jusqu'en 2018 Titre professionnel Développeur Logiciel, des changements on été effectués tel que l'ajout de Cybersécurité.<br />
+                Tous les Langages et Frameworks sont admis pour l'alternance.
+            </p>
+        </div>
+
         <!--A propos-->
         <div class="padding" id="about">
-            <h3>A propos</h3>
+            <h3><i class="fas fa-info-circle"></i> A propos : </h3><!--Ajout d'un icone avec fontAwesome-->
             <p>
                 Pationné d'informatique depuis une dizaine d'année, j'ai décidé de me lancer dans le développement et déménagé sur le Havre pour mes études. <br />
                 Avant cela je faisais du dépannage informatique Hardware/Software auprès de particuliers. <br />
-                Ma motivation est immense de pouvoir enfin me réaliser dans ce domaine. 
+                Ma motivation est immense de pouvoir enfin me réaliser dans le domaine du Développement Informatique.
             </p>
         </div>
 
@@ -186,7 +205,7 @@
             <div class="text-white" style="background-image: url(https://nsa39.casimages.com/img/2019/01/07//19010702372957308.png); background-size: 100% 170%;">
                 <div class="row">
                     <div id="contactText" class="col-sm-12">
-                        <h5>Contact</h5>
+                        <h5><i class="fas fa-address-card"></i> Contact</h5><!--Ajout d'un icone avec fontAwesome-->
                         <ul>
                             <li>Tel: 06.46.61.28.36</li>
                             <li>Mail: Harmeau.Mickael@gmail.com</li>

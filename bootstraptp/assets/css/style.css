@@ -13,7 +13,7 @@
     color: #000000;
 }
 .navbar {
-    background-color: #cecece;
+    background-color: #267295;
 }
 #contactText {
 	margin-left: 1em; /*Mise en page du Titre et sous titre pour le décoller de la bordure gauche*/
@@ -23,4 +23,13 @@
 }
 .padding {
 	padding-top: 4em; /*Mise en page et préféré à margin top pour que le NavBar ne se superpose pas avec le contenu de ses propres liens*/
+}
+h2{
+    background-color: #eee;
+}
+.skillsSize{
+    font-size: 1.2em;
+}
+.contactSize{
+    font-size: 1.1em;
 }

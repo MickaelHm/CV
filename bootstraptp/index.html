@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="assets/css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <meta charset="utf-8" />
@@ -56,15 +56,13 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
                     <button data-toggle="modal" data-target="#info" class="nav-link text-white btn btn-dark font-weight-bold rounded mr-sm-2">GitLab</button>
-                </form>
             </div>
         </nav>
         <!--Modal dans la NavBar-->
-        <div class="modal" id="info">
+        <div class="modal" tabindex="-1" role="dialog" aria-labelledby="title" aria-hidden="true" id="info">
             <!--Ajout d'une Modal-->
-            <div class="modal-dialog">
+            <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <p class="modal-title" id="title">GitLab Harmeau Mickael</p><!--Titre de la Modal-->
